@@ -1,4 +1,8 @@
 <?php
 $N = $args[0];
 
-// use echo to print your result here
+while ($N != strrev($N) && $N < pow(10, 19)) {
+    echo $N.' ';
+    $N += strrev($N);
+}
+echo $N;
