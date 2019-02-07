@@ -12,14 +12,14 @@ class Exercice5Test extends TestCase
     public function testCanRunExample()
     {
         $exercice = new Exercice(5);
-        $result = $exercice->run([
+        $result = $exercice->run(
             [10, 5],
             [0, 1],
             [3, 4],
             [2, 3],
             [1, 8],
             [1, 9]
-        ]);
+        );
         $this->assertEquals('5', $result);
     }
 
@@ -29,7 +29,7 @@ class Exercice5Test extends TestCase
     public function testCanRunNEqual100AndQEqual10()
     {
         $exercice = new Exercice(5);
-        $result = $exercice->run([
+        $result = $exercice->run(
             [100, 10],
             [25, 91],
             [83, 89],
@@ -41,7 +41,7 @@ class Exercice5Test extends TestCase
             [43, 54],
             [19, 35],
             [27, 97]
-        ]);
+        );
         $this->assertEquals('54', $result);
     }
 
@@ -51,7 +51,7 @@ class Exercice5Test extends TestCase
     public function testCanRunNEqual1000AndQEqual100()
     {
         $exercice = new Exercice(5);
-        $result = $exercice->run([
+        $result = $exercice->run(
             [1000, 100],
             [882, 906],
             [370, 591],
@@ -153,7 +153,7 @@ class Exercice5Test extends TestCase
             [128, 784],
             [131, 675],
             [486, 969]
-        ]);
+        );
         $this->assertEquals('54', $result);
     }
 
@@ -163,7 +163,7 @@ class Exercice5Test extends TestCase
     public function testCanRunNEqual10Exp5AndQEqual500()
     {
         $exercice = new Exercice(5);
-        $result = $exercice->run([
+        $result = $exercice->run(
             [100000, 500],
             [26772, 34179],
             [87782, 93872],
@@ -665,7 +665,7 @@ class Exercice5Test extends TestCase
             [50422, 63335],
             [13979, 31091],
             [49986, 74963]
-        ]);
+        );
         $this->assertEquals('51590', $result);
     }
 }
